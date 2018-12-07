@@ -96,3 +96,7 @@ form.form-delete {
     border-bottom: 1px solid rgba($black, .1); //only in sass
   }
 }
+
+[v-cloak] {
+  display:none;
+}
