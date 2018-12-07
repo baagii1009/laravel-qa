@@ -25,10 +25,12 @@
                                 <div class="col-4"></div>
                                 <div class="col-4"></div>
                                 <div class="col-4">
-                                    @include ('shared._author', [
+                                    {{-- @include ('shared._author', [
                                         'model' => $question,
                                         'label' => 'Asked'
-                                    ])
+                                    ]) old:laravel include --}}
+                                    {{-- <user-info :model="{{ id:1,title: 'qw'.. }}" label="Asked"></user-info>  equals following--}} 
+                                    <user-info :model="{{ $question }}" label="Asked"></user-info>
                                 </div>
                             </div>
                         </div>
