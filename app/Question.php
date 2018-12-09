@@ -8,7 +8,7 @@ class Question extends Model
 {
     use VotableTrait;
     protected $fillable = ['title', 'body'];
-    protected $appends = ['created_date', 'is_favourited', 'favourites_count'];
+    protected $appends = ['created_date', 'is_favourited', 'favourites_count', 'body_html'];
     
     public function user() {
         return $this->belongsTo(User::class);

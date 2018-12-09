@@ -29,9 +29,8 @@ Vue.use(Authorization);
 // const files = require.context('./', true, /\.vue$/i)
 // files.keys().map(key => Vue.component(key.split('/').pop().split('.')[0], files(key)))
 
-Vue.component('user-info', require('./components/UserInfo.vue'));
-Vue.component('vote', require('./components/Vote.vue'));
-Vue.component('answers', require('./components/Answers.vue'));
+Vue.component('question-page', require('./pages/QuestionPage.vue'));
+
 
 /**
  * Next, we will create a fresh Vue application instance and attach it to
