@@ -9,6 +9,11 @@
 
     <title>{{ config('app.name', 'Laravel') }}</title>
 
+<<<<<<< HEAD
+=======
+    
+
+>>>>>>> lesson-33
     <!-- Fonts -->
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet" type="text/css">
@@ -74,15 +79,25 @@
         </main>
     </div>
 
+<<<<<<< HEAD
     
+=======
+>>>>>>> lesson-33
     <!-- Scripts -->
     <script>
         window.Auth = {!! json_encode([
             'signedIn' => Auth::check(),
+<<<<<<< HEAD
             'user' => Auth::user()
         ]) !!}
     </script>
     <script src="{{ asset('js/app.js') }}"></script>
+=======
+            'user'=> Auth::user()
+        ]) !!}
+    </script>
+    <script src="{{ asset('js/app.js') }}" defer></script>
+>>>>>>> lesson-33
 
 </body>
 </html>
