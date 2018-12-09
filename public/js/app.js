@@ -14152,6 +14152,7 @@ Vue.use(__WEBPACK_IMPORTED_MODULE_0_vue_izitoast___default.a);
 
 Vue.component('user-info', __webpack_require__(52));
 Vue.component('answer', __webpack_require__(59));
+Vue.component('favorite', __webpack_require__(!(function webpackMissingModule() { var e = new Error("Cannot find module \"./components/Favorite.vue\""); e.code = 'MODULE_NOT_FOUND'; throw e; }())));
 
 /**
  * Next, we will create a fresh Vue application instance and attach it to
