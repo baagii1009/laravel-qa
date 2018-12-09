@@ -28,11 +28,8 @@ Vue.use(VueIziToast);
 Vue.component('user-info', require('./components/UserInfo.vue'));
 Vue.component('answer', require('./components/Answer.vue'));
 Vue.component('favorite', require('./components/Favourite.vue'));
-<<<<<<< HEAD
-=======
 Vue.component('accept', require('./components/Accept.vue'));
 
->>>>>>> lesson-33
 /**
  * Next, we will create a fresh Vue application instance and attach it to
  * the page. Then, you may begin adding components to this application
