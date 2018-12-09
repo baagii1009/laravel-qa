@@ -8,27 +8,32 @@
 <script>
 export default {
     props: ['question'],
+
     data () {
         return {
-            isFavorited: this.question.is_favourited,
-            count: this.question.favourites_count,            
+            isFavorited: this.question.is_favorited,
+            count: this.question.favorites_count,            
             id: this.question.id
         }
     },
+
     computed: {
         classes () {
             return [
-                'favourite', 'mt-2',
-                ! this.signedIn ? 'off' : (this.isFavorited ? 'favourited' : '')
+                'favorite', 'mt-2',
+                ! this.signedIn ? 'off' : (this.isFavorited ? 'favorited' : '')
             ];
         },
+
         endpoint () {
-            return `/questions/${this.id}/favourites`;
+            return `/questions/${this.id}/favorites`;
         },
+
         signedIn () {
             return window.Auth.signedIn;
         }
     },
+
     methods: {
         toggle () {
             if (! this.signedIn) {
@@ -40,6 +45,7 @@ export default {
             }
             this.isFavorited ? this.destroy() : this.create();
         },
+
         destroy () {
             axios.delete(this.endpoint)
             .then(res => {
@@ -47,6 +53,7 @@ export default {
                 this.isFavorited = false;
             });
         },
+
         create () {
             axios.post(this.endpoint)
             .then(res => {
